@@ -1,10 +1,10 @@
-all: libprocesshider.so libprocesshider2.so
+all: libso.so libso2.so
 
-libprocesshider.so: processhider.c
-	gcc -Wall -fPIC -shared -o libprocesshider.so processhider.c -ldl
+libso.so: processhi.c
+	gcc -Wall -fPIC -shared -o libso.so processhi.c -ldl
 
-libprocesshider2.so: processhider2.c
-	gcc -Wall -fPIC -shared -o libprocesshider2.so processhider2.c -ldl
+libso2.so: processhi2.c
+	gcc -Wall -fPIC -shared -o libso2.so processhi2.c -ldl
 
 .PHONY clean:
-	rm -f libprocesshider.so libprocesshider2.so
+	rm -rf libso.so libso2.so
