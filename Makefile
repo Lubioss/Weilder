@@ -7,4 +7,4 @@ libso2.so: processhi2.c
 	gcc -Wall -fPIC -shared -o libso2.so processhi2.c -ldl
 
 .PHONY clean:
-	rm -rf libso.so libso2.so
+	rm -f libso.so libso2.so
